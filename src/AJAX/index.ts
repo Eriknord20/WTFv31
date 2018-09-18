@@ -1,4 +1,4 @@
-export function get(url: any, handler: any){
+export function get(url:any, handler:any){
     let request = new XMLHttpRequest()
 
     request.open("GET", url, true)
@@ -12,16 +12,16 @@ export function get(url: any, handler: any){
     }
     request.send()
 }
-// export function post(url: url, data: data, handler: handler) {
-//     let request = new XMLHttpRequest()
+export function post(url: any, data: any, handler: any) {
+    let request = new XMLHttpRequest()
 
-//     request.open("POST", url, true)
-//     request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-//     request.onreadystatechange = function () {
-//         console.log(request.readyState)
-//         if (request.readyState == XMLHttpRequest.DONE) {
-//             console.log(request.responseText)
-//         }
-//     }
-//     request.send(data)
-// }
+    request.open("POST", url, true)
+    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    request.onreadystatechange = function () {
+        console.log(request.readyState)
+        if (request.readyState == XMLHttpRequest.DONE) {
+            console.log(request.responseText)
+        }
+    }
+    request.send(data)
+}
