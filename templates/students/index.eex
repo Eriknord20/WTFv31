@@ -1,0 +1,25 @@
+
+<h1 style="text-align:center; color:#0288d1">What's their face</h1>
+<link rel="stylesheet" type="text/css" href="/pluggy.css">
+
+
+		<%= if user do %>
+			<form action="/students/logout" method="post">
+				<button type="submit">Log Out</button>
+			</form>
+		<% else %>
+
+	<div class="Login">
+		<form action="/students/login" method="post">
+			<label style="color:#0288d1; font-size: 30px"for="username">Username: </label>
+			<input type="text" name="username" id="username" />
+			<br>
+			<label style="color:#0288d1; font-size: 30px;margin-left: 6px"for="password">Password: </label>
+			<input type="password" name="pwd" id="password" />
+            <br>
+            <button type="submit">Log In</button> 
+		</form>
+		<form action="/students/new" method="get">
+			<button type="submit">Register</button>
+		</form>
+		<% end %>
