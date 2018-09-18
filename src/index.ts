@@ -6,10 +6,10 @@ AJAX.get("/students", (response:any) => {
     console.log(response)
 })
 
-// let data = "omg=13&foo=1000"
-// AJAX.post("https://reqres.in/api/users", data, (response:any) => {
+let data = "omg=13&foo=1000"
+AJAX.post("https://reqres.in/api/users", data, (response:any) => {
 
-// })
+})
 
 // let request = new XMLHttpRequest()
 
