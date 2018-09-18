@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/AJAX/index.ts":
+/*!***************************!*\
+  !*** ./src/AJAX/index.ts ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nfunction get(url, handler) {\n    var request = new XMLHttpRequest();\n    request.open(\"GET\", url, true);\n    request.onreadystatechange = function () {\n        console.log(request.readyState);\n        if (request.readyState == XMLHttpRequest.DONE) {\n            console.log(JSON.parse(request.responseText));\n        }\n    };\n    request.send();\n}\nexports.get = get;\n// export function post(url: url, data: data, handler: handler) {\n//     let request = new XMLHttpRequest()\n//     request.open(\"POST\", url, true)\n//     request.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");\n//     request.onreadystatechange = function () {\n//         console.log(request.readyState)\n//         if (request.readyState == XMLHttpRequest.DONE) {\n//             console.log(request.responseText)\n//         }\n//     }\n//     request.send(data)\n// }\n\n\n//# sourceURL=webpack:///./src/AJAX/index.ts?");
+
+/***/ }),
+
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/bijanfatha/Desktop/wtfv3 -project/WTFv31/src/index.ts'\");\n\n//# sourceURL=webpack:///./src/index.ts?");
+"use strict";
+eval("\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];\n    result[\"default\"] = mod;\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar AJAX = __importStar(__webpack_require__(/*! ./AJAX */ \"./src/AJAX/index.ts\"));\nAJAX.get(\"/students\", function (response) {\n    console.log(response);\n});\n// let data = \"omg=13&foo=1000\"\n// AJAX.post(\"https://reqres.in/api/users\", data, (response:any) => {\n// })\n// let request = new XMLHttpRequest()\n// request.open(\"GET\", \"http://localhost:4567/stuff\", true)\n// request.onreadystatechange = function(){\n//     console.log(request.readyState)\n//     if(request.readyState == XMLHttpRequest.DONE){\n//         console.log(request.responseText)\n//     }\n// }\n// request.send()\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ })
 

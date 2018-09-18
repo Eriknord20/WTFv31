@@ -1,5 +1,5 @@
 {application,bcrypt_elixir,
-             [{applications,[kernel,stdlib,elixir,logger,crypto]},
+             [{applications,[kernel,stdlib,elixir,logger,crypto,elixir_make]},
               {description,"Bcrypt password hashing algorithm for Elixir\n"},
               {modules,['Elixir.Bcrypt','Elixir.Bcrypt.Base',
                         'Elixir.Bcrypt.Stats']},
