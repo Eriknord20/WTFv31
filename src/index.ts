@@ -5,6 +5,10 @@ import * as AJAX from './AJAX'
 AJAX.get("/students", (response:any) => {
     console.log(response)
 })
+AJAX.get("/students", (response:any) => {
+    let varmkorv = document.getElementsByClassName("varmkorv")
+    
+})
 
 let data = "omg=13&foo=1000"
 AJAX.post("https://reqres.in/api/users", data, (response:any) => {
